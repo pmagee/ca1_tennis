@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Detail</title>
+</head>
+<body>
+    <h1>Competition Details Page</h1>
+    <p>Name: {{ competition.name }}</p>
+    <p>Date: {{ competition.date }}</p>
+    <p>Club: {{ competition.tennis_club }}</p>
+    <p>Participants: </p>
+    {% for p in competition.participants.all %}
+    <li><strong>{{ p.first_name  }} {{ p.last_name  }} </strong></li>
+    {% endfor %}
+    
+</body>
+</html>

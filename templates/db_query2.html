@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Q6</title>
+    </head>
+    <body>
+        <h1>List of Competitions & Participants</h1>
+
+        {% if error_message %}
+            <p style="color: red;">{{ error_message }}</p>
+        {% else %}
+            {% if competitions %}
+                <ul>
+                   {% for competition in competitions %}
+                    <tr>
+                        <td>{{ competition.name }}</td>
+                        <td>{{ competition.date }}</td>
+                        <td>{{ competition.location }}</td>
+                        <td>
+                            {% for participant in competition.participants.all %}
+                                <strong>{{ participant.first_name }} {{ participant.last_name }}</strong>
+                            {% empty %}
+                                No participants
+                            {% endfor %}
+                            <br>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>No members available in the database.</p>
+            {% endif %}
+        {% endif %}
+    </body>
+</html>
+
+    

@@ -1,0 +1,104 @@
+[
+  {
+    "model": "tennis_app.tennisclub",
+    "pk": 1,
+    "fields": {
+      "name": "Sunset Tennis Club",
+      "location": "1 Sunset Blvd",
+      "established_date": "1995-06-15",
+      "membership_fee": "150"
+    }
+  },
+  {
+    "model": "tennis_app.tennisclub",
+    "pk": 2,
+    "fields": {
+      "name": "Greenfield Tennis Club",
+      "location": "4 Greenfield Ave",
+      "established_date": "2000-03-10",
+      "membership_fee": "200"
+    }
+  },
+  {
+    "model": "tennis_app.tennisclub",
+    "pk": 3,
+    "fields": {
+      "name": "Lakeside Tennis Club",
+      "location": "7 Lakeside Dr",
+      "established_date": "2010-07-20",
+      "membership_fee": "180"
+    }
+  },
+  {
+    "model": "tennis_app.member",
+    "pk": 1,
+    "fields": {
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "join_date": "2021-01-15",
+      "tennis_club": 1
+    }
+  },
+  {
+    "model": "tennis_app.member",
+    "pk": 2,
+    "fields": {
+      "first_name": "Bob",
+      "last_name": "Smith",
+      "join_date": "2022-03-22",
+      "tennis_club": 1
+    }
+  },
+  {
+    "model": "tennis_app.member",
+    "pk": 3,
+    "fields": {
+      "first_name": "Charlie",
+      "last_name": "Brown",
+      "join_date": "2023-05-30",
+      "tennis_club": 2
+    }
+  },
+  {
+    "model": "tennis_app.member",
+    "pk": 4,
+    "fields": {
+      "first_name": "Diana",
+      "last_name": "Prince",
+      "join_date": "2020-09-05",
+      "tennis_club": 3
+    }
+  },
+  {
+    "model": "tennis_app.competition",
+    "pk": 1,
+    "fields": {
+      "name": "Summer Open",
+      "date": "2024-07-15",
+      "tennis_club": 1,
+      "participants": [1, 2]
+    }
+  },
+  {
+    "model": "tennis_app.competition",
+    "pk": 2,
+    "fields": {
+      "name": "Fall Championship",
+      "date": "2024-09-10",
+      "tennis_club": 2,
+      "participants": [3]
+    }
+  },
+  {
+    "model": "tennis_app.competition",
+    "pk": 3,
+    "fields": {
+      "name": "Winter Gala",
+      "date": "2024-12-05",
+      "tennis_club": 3,
+      "participants": [4]
+    }
+  }
+]
+
+  

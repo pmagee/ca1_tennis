@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Competition List</title>
+</head>
+<body>
+    <h1>Competition List Page</h1>
+    {% for c in all_comps_list %}
+    <h4>{{ c.name  }},{{ c.date }},{{ c.tennis_club }}</h4>
+    {% endfor %}
+    <h3><a href="{% url 'comp_new' %}">+New Competition</a></h3>
+</body>
+</html>
